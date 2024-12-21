@@ -11,7 +11,7 @@ const StartSubPage = () => {
   const navigate = useNavigate();
 
   const handleClick = async () => {
-    console.log('Lets GO clicked');
+    alert('Backend is not running!');
     const user = await axios.get(
       base_api_uri + "/api/user?chatId=" + appContext.userInfo.chatId
     );
